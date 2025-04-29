@@ -1,9 +1,9 @@
-const Libro = require('../models/libro.model');
+const Autor = require('../models/autor.model');
 const DatabaseAdapter = require('../adapter/database.adapter');
 
-const autorAdapter = new DatabaseAdapter(Libro);
+const autorAdapter = new DatabaseAdapter(Autor);
 
-class LibroService {
+class AutorService {
   static async listar() {
     return await autorAdapter.find();
   }
@@ -17,4 +17,4 @@ class LibroService {
   }
 }
 
-module.exports = LibroService;
+module.exports = AutorService;
