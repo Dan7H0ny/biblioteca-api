@@ -9,7 +9,7 @@ class PrestamoService {
   }
 
   static async eliminar(id) {
-    return await autorAdapter.findByIdAndDelete(id);
+    return await autorAdapter.delete(id);
   }
 }
 

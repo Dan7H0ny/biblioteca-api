@@ -13,7 +13,7 @@ class AutorService {
   }
 
   static async actualizar(id, data) {
-    return await autorAdapter.findByIdAndUpdate(id, data);
+    return await autorAdapter.update(id, data);
   }
 }
 
